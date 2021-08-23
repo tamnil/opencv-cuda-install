@@ -1,1 +1,34 @@
 # opencv-cuda-install
+
+``` bash
+
+cmake -D CMAKE_BUILD_TYPE=RELEASE \
+-D CMAKE_INSTALL_PREFIX=/usr/local \
+-D WITH_TBB=ON \
+-D ENABLE_FAST_MATH=1 \
+-D CUDA_FAST_MATH=1 \
+-D WITH_CUBLAS=1 \
+-D WITH_CUDA=ON \
+-D BUILD_opencv_cudacodec=OFF \
+-D WITH_CUDNN=ON \
+-D OPENCV_DNN_CUDA=ON \
+-D CUDA_ARCH_BIN=7.5 \
+-D WITH_V4L=ON \
+-D WITH_QT=OFF \
+-D WITH_OPENGL=ON \
+-D WITH_GSTREAMER=ON \
+-D OPENCV_GENERATE_PKGCONFIG=ON \
+-D OPENCV_PC_FILE_NAME=opencv.pc \
+-D OPENCV_ENABLE_NONFREE=ON \
+-D OPENCV_PYTHON3_INSTALL_PATH=/home/tamnil/.asdf/installs/python/3.7.9 \
+-D PYTHON_EXECUTABLE=/home/tamnil/.asdf/shims/python \
+-D BUILD_NEW_PYTHON_SUPPORT=ON \
+-D BUILD_opencv_python3=ON \
+-D HAVE_opencv_python3=ON \
+-D OPENCV_EXTRA_MODULES_PATH=/home/tamnil/opencv/opencv_contrib-4.5.3 \
+-D INSTALL_PYTHON_EXAMPLES=OFF \
+-D INSTALL_C_EXAMPLES=OFF \
+-D BUILD_EXAMPLES=OFF ..
+
+
+```
